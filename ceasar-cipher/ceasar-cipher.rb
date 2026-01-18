@@ -5,9 +5,11 @@ end
 def ceasar_cipher(message, step)
     a_downcase = ('a'..'z').to_a
     a_upcase = ('A'..'Z').to_a
-    cipher = []
 
     plain = message.split("").to_a
+    cipher = []
+
+
     plain.each do |char|
         if a_downcase.include?(char)
             index = cipher_formular(a_downcase.index(char), step)

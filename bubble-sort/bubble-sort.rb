@@ -6,7 +6,7 @@ def bubble_sort(unsorted)
   unsorted.each_with_index do |first, i_first|
     unsorted.each_with_index do |second, i_second|
       break if i_second == unsorted.length - 1
-      if first < second
+      if unsorted[i_first] < unsorted[i_second]
         temp = unsorted[i_first]
         unsorted[i_first] = second
         unsorted[i_second] = temp

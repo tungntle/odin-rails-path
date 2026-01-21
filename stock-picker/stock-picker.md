@@ -1,4 +1,8 @@
-lặp qua mảng prices
-mua vào giá a, bán ra giá b
-sao cho b - a có lợi nhuận cao nhất
-cần phải so buy với phần còn lại để xem giá nào là tốt nhất, so từng buy 
+Method stock_picker:
+- Receive array of stock prices
+- Each price is relative to hypothetical day
+- Return which day to buy, and best day to sell, that profit at max
+
+Tips:
+- Need to buy before sell
+- Pay attention to edge case like: lowest day is the last day or the highest day is the first day
